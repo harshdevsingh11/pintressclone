@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style2.css">
+</head>
+<body>
+    <nav>
+     <div class="logo">
+       <h1>Pinterest</h1>
+     </div>
+     <ul class="navLink">
+       <li><a href="#">About</a></li>
+       <li><a href="/contact">Contact</a></li>
+       <li><a href="/profile">Your Profile</a></li>
+     </ul>
+     <div class="lines">
+         <div class="l1"></div>
+         <div class="l2"></div>
+         <div class="l3"></div>
+     </div>
+   </nav>
+
+<header>
+ <h1>Pinterest Style Image Galley</h1>
+ <h2>you can explore more with harsh pinterest</h2>
+</header> 
+
+     
+<div class="container">
+             <div class="boxes">
+                <% posts.forEach(function(elem){ %>
+                    <div class="boxs">
+                        <img src="/images/uploads/<%= elem.image %>" alt="">
+                        <h5 class="caption"><%= elem.postText %></h5>
+                    </div>
+                   
+                <% }) %>
+             </div>
+ </div> 
+</body>
+</html>                                 
