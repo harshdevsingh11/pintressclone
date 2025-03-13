@@ -1,0 +1,174 @@
+.user-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Card cover styles */
+  .card-cover {
+    margin-bottom: 2rem;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  /* Avatar wrapper - positioned relative to contain the absolutely positioned avatar */
+  .avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  /* Avatar styling */
+  .avatar {
+    position: relative;
+    background-color: rgba(169, 169, 169, 0.5); /* Light mode */
+    padding: 0.5rem;
+    background-color: rgba(97, 97, 97, 0.5); /* Dark mode */
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .avatar-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white; /* Optional, adds a border for visual emphasis */
+  }
+  
+  /* Card body styling */
+  .card-body {
+    padding: 1.25rem;
+    text-align: center;
+    flex-grow: 1;
+    z-index: 5;
+    position: relative;
+    color: #1f2937;
+  }
+  
+  /* Card name styling */
+  .card-name {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  /* Card information styling */
+  .card-info {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #090c10;
+  }
+  
+  /* Dark mode styles */
+  body {
+    background-color: #1f2937;
+    color: #e5e7eb;
+  }
+  
+  body.dark-mode .user-card {
+    background-color: #2d3748;
+  }
+  
+  body.dark-mode .card-info {
+    color: #2e3843;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #6a1b9a, #e91e63); /* Purple to Pink gradient */
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffeb3b; /* Yellow hover effect */
+  }
+  
+  /* Floating Action Button */
+  .fab {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff4081; /* Pink color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fab:hover {
+    background-color: #e91e63; /* Slightly darker pink on hover */
+  }
+    .button{
+        background-color: red;
+        color: white;
+        text-decoration: none;
+        border-radius: 2px;
+    }
+    .flex{
+        display: flex;
+        height: start;
+        gap: 10px;
+    }
+    .container{
+      min-height:start;
+      padding-top: 12px;
+    }
